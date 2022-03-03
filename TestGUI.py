@@ -64,14 +64,14 @@ info_label = Label(fenster, text="Ich bin eine Info:\n\Der Beenden Button schlie
 fenster.geometry("1024x600")
 # Wir benutzen die absoluten Koordinaten um die Komponenten zu
 # setzen und definieren deren Grösse
-LED_Button_OL.place(x = 10, y = 55, width=250, height=50)
-LED_txt_OL.place(x = 10, y = 5, width=250, height=50)
-LED_Button_OR.place(x = 260, y = 55, width=250, height=50)
-LED_txt_OR.place(x = 260, y = 5, width=250, height=50)
-LED_Button_UL.place(x = 10, y = 355, width=250, height=50)
-LED_txt_UL.place(x = 10, y = 405, width=250, height=50)
-LED_Button_UR.place(x = 260, y = 355, width=250, height=50)
-LED_txt_UR.place(x = 260, y = 405, width=250, height=50)
+LED_Button_OL.place(x = 10, y = 55, width=175, height=50)
+LED_txt_OL.place(x = 10, y = 5, width=175, height=50)
+LED_Button_OR.place(x = 210, y = 55, width=175, height=50)
+LED_txt_OR.place(x = 210, y = 5, width=175, height=50)
+LED_Button_UL.place(x = 10, y = 355, width=175, height=50)
+LED_txt_UL.place(x = 10, y = 300, width=175, height=50)
+LED_Button_UR.place(x = 210, y = 355, width=175, height=50)
+LED_txt_UR.place(x = 210, y = 300, width=175, height=50)
 
 
 # In der Ereignisschleife auf Eingabe des Benutzers warten.
