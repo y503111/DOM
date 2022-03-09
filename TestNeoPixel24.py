@@ -23,24 +23,21 @@ LED_CHANNEL    = 0       # set to '1' for GPIOs 13, 19, 41, 45 or 53
 
  #Define functions which animate LEDs in various ways.
 def colorWipe(strip, color, wait_ms=50):
-    """Wipe color across display a pixel at a time."""
+    i = 0
     for i in range(15):
         strip.setPixelColor(i, color)
         strip.show()
         
 
 def colorWipe1(strip, color, wait_ms=50):
-    """Wipe color across display a pixel at a time."""
+    i = 0
     for i in range(15):
         i = i+15
         strip.setPixelColor(i, color)
         strip.show()
             
 def colorWipe2(strip, color, wait_ms=50):
-    """Wipe color across display a pixel at a time."""
-    #while True:
-       # for i in range(12):
-       #while True:
+    i = 0
     strip.setPixelColor(31, color)
     strip.setPixelColor(32, color)
     strip.setPixelColor(33, color)
@@ -60,10 +57,7 @@ def colorWipe2(strip, color, wait_ms=50):
     time.sleep(wait_ms/1000.0)
             
 def colorWipe3(strip, color, wait_ms=50):
-    """Wipe color across display a pixel at a time."""
-   # while True:
-       # for i in range(12):
-       #while True:
+    i = 0
     strip.setPixelColor(46, color)
     strip.setPixelColor(47, color)
     strip.setPixelColor(48, color)
@@ -83,16 +77,13 @@ def colorWipe3(strip, color, wait_ms=50):
     time.sleep(wait_ms/1000.0)
 
 def left(strip, color, wait_ms=50):
-    """Wipe color across display a pixel at a time."""
+    i = 0
     for i in range(30):
         strip.setPixelColor(i, color)
         strip.show()
             
 def right(strip, color, wait_ms=50):
-    """Wipe color across display a pixel at a time."""
-    #while True:
-       # for i in range(12):
-       #while True:
+    i = 0
     strip.setPixelColor(31, color)
     strip.setPixelColor(32, color)
     strip.setPixelColor(33, color)
@@ -127,8 +118,7 @@ def right(strip, color, wait_ms=50):
     time.sleep(wait_ms/1000.0)
 
 def all(strip, color, wait_ms=50):
-    """Wipe color across display a pixel at a time."""
-    
+    i = 0
     for i in range(60):
         strip.setPixelColor(i, color)
         strip.show()
