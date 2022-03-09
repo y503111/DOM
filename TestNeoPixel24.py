@@ -33,49 +33,23 @@ def colorWipe(strip, color, wait_ms=50):
 def colorWipe1(strip, color, wait_ms=50):
     i = 0
     for i in range(15):
-        i = i+15
+        i = i+16
         strip.setPixelColor(i, color)
         strip.show()
             
 def colorWipe2(strip, color, wait_ms=50):
     i = 0
-    strip.setPixelColor(31, color)
-    strip.setPixelColor(32, color)
-    strip.setPixelColor(33, color)
-    strip.setPixelColor(34, color)
-    strip.setPixelColor(35, color)
-    strip.setPixelColor(36, color)
-    strip.setPixelColor(37, color)
-    strip.setPixelColor(38, color)
-    strip.setPixelColor(39, color)
-    strip.setPixelColor(40, color)
-    strip.setPixelColor(41, color)
-    strip.setPixelColor(42, color)
-    strip.setPixelColor(43, color)
-    strip.setPixelColor(44, color)
-    strip.setPixelColor(45, color)
-    strip.show()
-    time.sleep(wait_ms/1000.0)
+    for i in range(15):
+        i = i+31
+        strip.setPixelColor(i, color)
+        strip.show()
             
 def colorWipe3(strip, color, wait_ms=50):
-    i = 0
-    strip.setPixelColor(46, color)
-    strip.setPixelColor(47, color)
-    strip.setPixelColor(48, color)
-    strip.setPixelColor(49, color)
-    strip.setPixelColor(50, color)
-    strip.setPixelColor(51, color)
-    strip.setPixelColor(52, color)
-    strip.setPixelColor(53, color)
-    strip.setPixelColor(54, color)
-    strip.setPixelColor(55, color)
-    strip.setPixelColor(56, color)
-    strip.setPixelColor(57, color)
-    strip.setPixelColor(58, color)
-    strip.setPixelColor(59, color)
-    strip.setPixelColor(60, color)
-    strip.show()
-    time.sleep(wait_ms/1000.0)
+     i = 0
+     for i in range(15):
+        i = i+46
+        strip.setPixelColor(i, color)
+        strip.show()
 
 def left(strip, color, wait_ms=50):
     i = 0
@@ -85,38 +59,10 @@ def left(strip, color, wait_ms=50):
             
 def right(strip, color, wait_ms=50):
     i = 0
-    strip.setPixelColor(31, color)
-    strip.setPixelColor(32, color)
-    strip.setPixelColor(33, color)
-    strip.setPixelColor(34, color)
-    strip.setPixelColor(35, color)
-    strip.setPixelColor(36, color)
-    strip.setPixelColor(37, color)
-    strip.setPixelColor(38, color)
-    strip.setPixelColor(39, color)
-    strip.setPixelColor(40, color)
-    strip.setPixelColor(41, color)
-    strip.setPixelColor(42, color)
-    strip.setPixelColor(43, color)
-    strip.setPixelColor(44, color)
-    strip.setPixelColor(45, color)
-    strip.setPixelColor(46, color)
-    strip.setPixelColor(47, color)
-    strip.setPixelColor(48, color)
-    strip.setPixelColor(49, color)
-    strip.setPixelColor(50, color)
-    strip.setPixelColor(51, color)
-    strip.setPixelColor(52, color)
-    strip.setPixelColor(53, color)
-    strip.setPixelColor(54, color)
-    strip.setPixelColor(55, color)
-    strip.setPixelColor(56, color)
-    strip.setPixelColor(57, color)
-    strip.setPixelColor(58, color)
-    strip.setPixelColor(59, color)
-    strip.setPixelColor(60, color)
-    strip.show()
-    time.sleep(wait_ms/1000.0)
+    for i in range(30):
+        i= i+31
+        strip.setPixelColor(i, color)
+        strip.show()
 
 def all(strip, color, wait_ms=50):
     i = 0
