@@ -53,8 +53,9 @@ def colorWipe3(strip, color, wait_ms=50):
         strip.show()
 
 def left(strip, color, wait_ms=50):
-    i = 1
+    i = 0
     for i in range(30):
+        i=i+1
         strip.setPixelColor(i, color)
         strip.show()
             
@@ -62,6 +63,7 @@ def right(strip, color, wait_ms=50):
     i = 0
     for i in range(30):
         i= i+31
+        strip.setPixelColor(0, color)
         strip.setPixelColor(i, color)
         strip.show()
 
