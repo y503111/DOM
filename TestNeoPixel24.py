@@ -48,6 +48,7 @@ def colorWipe3(strip, color, wait_ms=50):
      i = 0
      for i in range(15):
         i = i+46
+        strip.setPixelColor(0, color)
         strip.setPixelColor(i, color)
         strip.show()
 
