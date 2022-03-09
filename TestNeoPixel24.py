@@ -33,6 +33,15 @@ def colorWipe(strip, color, wait_ms=50):
     strip.setPixelColor(4, color)
     strip.setPixelColor(5, color)
     strip.setPixelColor(6, color)
+    strip.setPixelColor(7, color)
+    strip.setPixelColor(8, color)
+    strip.setPixelColor(9, color)
+    strip.setPixelColor(10, color)
+    strip.setPixelColor(11, color)
+    strip.setPixelColor(12, color)
+    strip.setPixelColor(13, color)
+    strip.setPixelColor(14, color)
+    strip.setPixelColor(15, color)
     strip.show()
     time.sleep(wait_ms/1000.0)
         
@@ -42,84 +51,6 @@ def colorWipe1(strip, color, wait_ms=50):
     #while True:
        # for i in range(12):
        #while True:
-    strip.setPixelColor(7, color)
-    strip.setPixelColor(8, color)
-    strip.setPixelColor(9, color)
-    strip.setPixelColor(10, color)
-    strip.setPixelColor(11, color)
-    strip.setPixelColor(12, color)
-    strip.show()
-    time.sleep(wait_ms/1000.0)
-            
-def colorWipe2(strip, color, wait_ms=50):
-    """Wipe color across display a pixel at a time."""
-    #while True:
-       # for i in range(12):
-       #while True:
-    strip.setPixelColor(13, color)
-    strip.setPixelColor(14, color)
-    strip.setPixelColor(15, color)
-    strip.setPixelColor(16, color)
-    strip.setPixelColor(17, color)
-    strip.setPixelColor(18, color)
-    strip.show()
-    time.sleep(wait_ms/1000.0)
-            
-def colorWipe3(strip, color, wait_ms=50):
-    """Wipe color across display a pixel at a time."""
-   # while True:
-       # for i in range(12):
-       #while True:
-    strip.setPixelColor(19, color)
-    strip.setPixelColor(20, color)
-    strip.setPixelColor(21, color)
-    strip.setPixelColor(22, color)
-    strip.setPixelColor(23, color)
-    strip.setPixelColor(0, color)
-    strip.show()
-    time.sleep(wait_ms/1000.0)
-
-def left(strip, color, wait_ms=50):
-    """Wipe color across display a pixel at a time."""
-    #while True:
-    #for i in range(12):
-       #while True:
-    strip.setPixelColor(0, color)
-    strip.setPixelColor(1, color)
-    strip.setPixelColor(2, color)
-    strip.setPixelColor(3, color)
-    strip.setPixelColor(4, color)
-    strip.setPixelColor(5, color)
-    strip.setPixelColor(6, color)
-    strip.setPixelColor(7, color)
-    strip.setPixelColor(8, color)
-    strip.setPixelColor(9, color)
-    strip.setPixelColor(10, color)
-    strip.setPixelColor(11, color)
-    strip.setPixelColor(12, color)
-    strip.setPixelColor(13, color)
-    strip.setPixelColor(14, color)
-    strip.setPixelColor(15, color)
-    strip.setPixelColor(16, color)
-    strip.setPixelColor(17, color)
-    strip.setPixelColor(18, color)
-    strip.setPixelColor(19, color)
-    strip.setPixelColor(20, color)
-    strip.setPixelColor(21, color)
-    strip.setPixelColor(22, color)
-    strip.setPixelColor(23, color)
-    strip.show()
-    time.sleep(wait_ms/1000.0)
-            
-def right(strip, color, wait_ms=50):
-    """Wipe color across display a pixel at a time."""
-    #while True:
-       # for i in range(12):
-       #while True:
-    strip.setPixelColor(12, color)
-    strip.setPixelColor(13, color)
-    strip.setPixelColor(14, color)
-    strip.setPixelColor(15, color)
     strip.setPixelColor(16, color)
     strip.setPixelColor(17, color)
     strip.setPixelColor(18, color)
@@ -129,15 +60,66 @@ def right(strip, color, wait_ms=50):
     strip.setPixelColor(22, color)
     strip.setPixelColor(23, color)
     strip.setPixelColor(24, color)
+    strip.setPixelColor(25, color)
+    strip.setPixelColor(26, color)
+    strip.setPixelColor(27, color)
+    strip.setPixelColor(28, color)
+    strip.setPixelColor(29, color)
+    strip.setPixelColor(30, color)
+    strip.show()
+    time.sleep(wait_ms/1000.0)
+            
+def colorWipe2(strip, color, wait_ms=50):
+    """Wipe color across display a pixel at a time."""
+    #while True:
+       # for i in range(12):
+       #while True:
+    strip.setPixelColor(31, color)
+    strip.setPixelColor(32, color)
+    strip.setPixelColor(33, color)
+    strip.setPixelColor(34, color)
+    strip.setPixelColor(35, color)
+    strip.setPixelColor(36, color)
+    strip.setPixelColor(37, color)
+    strip.setPixelColor(38, color)
+    strip.setPixelColor(39, color)
+    strip.setPixelColor(40, color)
+    strip.setPixelColor(41, color)
+    strip.setPixelColor(42, color)
+    strip.setPixelColor(43, color)
+    strip.setPixelColor(44, color)
+    strip.setPixelColor(45, color)
+    strip.show()
+    time.sleep(wait_ms/1000.0)
+            
+def colorWipe3(strip, color, wait_ms=50):
+    """Wipe color across display a pixel at a time."""
+   # while True:
+       # for i in range(12):
+       #while True:
+    strip.setPixelColor(46, color)
+    strip.setPixelColor(47, color)
+    strip.setPixelColor(48, color)
+    strip.setPixelColor(49, color)
+    strip.setPixelColor(50, color)
+    strip.setPixelColor(51, color)
+    strip.setPixelColor(52, color)
+    strip.setPixelColor(53, color)
+    strip.setPixelColor(54, color)
+    strip.setPixelColor(55, color)
+    strip.setPixelColor(56, color)
+    strip.setPixelColor(57, color)
+    strip.setPixelColor(58, color)
+    strip.setPixelColor(59, color)
+    strip.setPixelColor(60, color)
     strip.show()
     time.sleep(wait_ms/1000.0)
 
-def all(strip, color, wait_ms=50):
+def left(strip, color, wait_ms=50):
     """Wipe color across display a pixel at a time."""
     #while True:
-    #for i in range(24):
+    #for i in range(12):
        #while True:
-    strip.setPixelColor(0, color)
     strip.setPixelColor(1, color)
     strip.setPixelColor(2, color)
     strip.setPixelColor(3, color)
@@ -168,6 +150,14 @@ def all(strip, color, wait_ms=50):
     strip.setPixelColor(28, color)
     strip.setPixelColor(29, color)
     strip.setPixelColor(30, color)
+    strip.show()
+    time.sleep(wait_ms/1000.0)
+            
+def right(strip, color, wait_ms=50):
+    """Wipe color across display a pixel at a time."""
+    #while True:
+       # for i in range(12):
+       #while True:
     strip.setPixelColor(31, color)
     strip.setPixelColor(32, color)
     strip.setPixelColor(33, color)
@@ -198,9 +188,16 @@ def all(strip, color, wait_ms=50):
     strip.setPixelColor(58, color)
     strip.setPixelColor(59, color)
     strip.setPixelColor(60, color)
-    #strip.setPixelColor(i, color)
     strip.show()
     time.sleep(wait_ms/1000.0)
+
+def all(strip, color, wait_ms=50):
+    """Wipe color across display a pixel at a time."""
+    
+    for i in range(60):
+        strip.setPixelColor(i, color)
+        strip.show()
+ 
 
 # Main program logic follows:
 if __name__ == '__main__':
