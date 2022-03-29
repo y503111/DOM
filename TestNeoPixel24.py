@@ -8,23 +8,21 @@ from rpi_ws281x import *
 import argparse
 
 # LED strip configuration:
-LED_COUNT      = 60      # Number of LED pixels.
-LED_PIN        = 18      # GPIO pin connected to the pixels (18 uses PWM!).
-#LED_PIN        = 10      # GPIO pin connected to the pixels (10 uses SPI /dev/spidev0.0).
-LED_FREQ_HZ    = 800000  # LED signal frequency in hertz (usually 800khz)
-LED_DMA        = 10      # DMA channel to use for generating signal (try 10)
-LED_BRIGHTNESS = 255     # Set to 0 for darkest and 255 for brightest
-LED_INVERT     = False   # True to invert the signal (when using NPN transistor level shift)
-LED_CHANNEL    = 0       # set to '1' for GPIOs 13, 19, 41, 45 or 53
+LED_COUNT      = 60      # Anazahl NeoPixel
+LED_PIN        = 18      # Gewaehlter GPIO pin
+LED_FREQ_HZ    = 800000  # LED signal Frequenz in Hertz (800khz)
+LED_DMA        = 10      # DMA (Direkt Memory Acces) channel (10 vom Hersteller empfohlen)
+LED_BRIGHTNESS = 255     # Helligkeit von 0 bis max. 255
+LED_INVERT     = False   # Invertiertes Signal für Transistorschaltung
+LED_CHANNEL    = 0       # auf '1' setzten wenn GPIOs 13, 19, 41, 45 oder 53 genutzt werden sollen
 
 
- #Define functions which animate LEDs in various ways.
 def colorWipe(strip, color, wait_ms=50):
     i = 0
-    for i in range(15):
-        i = i+1
-        strip.setPixelColor(i, color)
-        strip.show()
+    for i in range(15):                                 #Angabe wie viele Neopixel angesteuert werden sollen
+        i = i+1                                         #Position für den Ersten NeoPixel der angestuert werden soll 
+        strip.setPixelColor(i, color)                   #den Anzusteuernden Pixeln die Farbwerte übergeben
+        strip.show()                                    #Pixel Ansteuern
         
 
 def colorWipe1(strip, color, wait_ms=50):
@@ -88,14 +86,14 @@ if __name__ == '__main__':
         print('Use "-c" argument to clear LEDs on exit')
 
     try:
-        x=1
-        while x<10:
+        x=1                                                     
+        while x<9:                                      #Nur Eingaben kleiner 9 werden verarbeitet                                         
             
-            print ('Color wipe animations.')
-            x=int(input("Position waehlen : "))
-            if x == 1:
-                print("Bereich 1 gewaehlt")
-                colorWipe(strip, Color(127, 127, 127))  
+            print ('Dom Beleuchtung')
+            x=int(input("Position waehlen : "))         #Aufforderung im Terminal ausgeben
+            if x == 1:                                  #Eingabe vergleichen
+                print("Bereich 1 gewaehlt")             #Konsolenausgabe welcher Bereich gaehlt wurde
+                colorWipe(strip, Color(127, 127, 127))  #Farbwerte Vergeben 
                 
             
             if x == 2:
