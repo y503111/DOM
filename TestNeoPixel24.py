@@ -1,10 +1,7 @@
 
-#!/usr/bin/env python3
-# rpi_ws281x library strandtest example
-# Author: Tony DiCola (tony@tonydicola.com)
-#
-# Direct port of the Arduino NeoPixel library strandtest example.  Showcases
-# various animations on a strip of NeoPixels.
+
+# rpi_ws281x library example
+
 
 import time
 from rpi_ws281x import *
@@ -131,24 +128,6 @@ if __name__ == '__main__':
                 print("Ausschalten ")
                 all(strip, Color(0,0,0))
                
-                
-            if x == 10:
-                print("Kartoffel ")
-                
-            #colorWipe1(strip, Color(127, 127, 127))
-            #colorWipe2(strip, Color(127, 127, 127))
-            #colorWipe3(strip, Color(127, 127, 127))
-            #left(strip, Color(127, 127, 127))
-            #right(strip, Color(127, 127, 127))
-           # colorWipe(strip, Color(0, 0, 255))  # Green wipe
-      #      print ('Theater chase animations.')
-       #     theaterChase(strip, Color(127, 127, 127))  # White theater chase
-        #    theaterChase(strip, Color(127,   0,   0))  # Red theater chase
-         #   theaterChase(strip, Color(  0,   0, 127))  # Blue theater chase
-          #  print ('Rainbow animations.')
-           # rainbow(strip)
-            #rainbowCycle(strip)
-            #theaterChaseRainbow(strip)
 
     except KeyboardInterrupt:
         if args.clear:
