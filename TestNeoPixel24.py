@@ -95,7 +95,7 @@ if __name__ == '__main__':
             x=int(input("Position waehlen : "))
             if x == 1:
                 print("Bereich 1 gewaehlt")
-                colorWipe(strip, Color(127, 127, 127))  # Blue wipe
+                colorWipe(strip, Color(127, 127, 127))  
                 
             
             if x == 2:
